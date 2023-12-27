@@ -1,0 +1,15 @@
+package com.scaler.Splitwise.DTO;
+
+import com.scaler.Splitwise.Services.Transaction;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.util.List;
+
+@Getter
+@Setter
+public class SettleUpUserResponseDTO {
+    private List<Transaction> transactions;
+    private ResponseStatus responseStatus;
+    private String failureMessage;
+}
